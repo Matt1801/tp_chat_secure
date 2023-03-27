@@ -9,7 +9,8 @@ from generic_callback import GenericCallback
 DEFAULT_VALUES = {
     "host" : "127.0.0.1",
     "port" : "6666",
-    "name" : "foo"
+    "name" : "foo",
+    "pswd" : ""
 }
 
 class BasicGUI:
@@ -120,7 +121,6 @@ class BasicGUI:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-
     # instanciate the class, create context and related stuff, run the main loop
     client = BasicGUI()
     client.create()
